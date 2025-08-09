@@ -1,0 +1,108 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-family: montserrat;
+  font-weight: 800;
+}
+
+footer {
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+}
+
+.button1 {
+  cursor: pointer;
+  color: white;
+  background-color: #232b2b;
+  padding: 8px 22px 8px 22px;
+  border: 0;
+  border-radius: 6px;
+}
+
+.button1:hover {
+  background-color: #3b444b;
+  transition: 0.4s;
+}
+
+.button1:active {
+  background-color: gray;
+  transition: 0.05s;
+}
+
+.button2 {
+  cursor: pointer;
+  background-color: #FFFFFF;
+  padding: 8px 22px 8px 22px;
+  border: 1.5px solid #000000;
+  border-radius: 6px;
+}
+
+.button2:hover {
+  background-color: #D3D3D3;
+  transition: 0.4s;
+}
+
+.button2:active {
+  background-color: gray;
+  color: white;
+  transition: 0.05s;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #7bcfa2;
+  max-width: 1400px;
+  height: 100vh;
+  margin: auto;
+  font-family: roboto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4c72c4;
+  padding: 5px 20px 5px 20px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px
+}
+
+.hero-text {
+  padding: 25px 0 25px 0;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 40px;
+  list-style-type: none;
+  color: white;
+  font-weight: 600;
+}
+
+.logo {
+  0 0 0 100px;
+}
+
+.box1 {
+  background-color: #db92f6;
+  width: 600px;
+  padding: 25px;
+  border: 2px solid black;
+}
