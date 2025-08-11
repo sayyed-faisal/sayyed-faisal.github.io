@@ -15,17 +15,16 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: Roboto, Arial, sans-serif;
 }
 
-main {
+.hero {
   display: flex;
   gap: 50px;
   align-items: center;
   margin: 75px auto;
   padding: 0 20px;
   text-align: left;
-  font-family: roboto, sans-serif;
-  font-size: 36px;
 }
 
 footer {
@@ -38,6 +37,13 @@ footer {
   margin-top: auto;
 }
 
+@media screen and (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 .navitem {
   display: inline-block;
   padding: 1em;
@@ -45,7 +51,6 @@ footer {
 
 .navlink {
   color: white;
-  font-family: Roboto, Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   text-decoration: none;
@@ -78,18 +83,95 @@ footer {
 }
 
 .hero-text {
-  font-size: clamp(16px, 4vw, 36px);
+  font-size: clamp(16px, 4vw, 28px);
   word-wrap: break-word;
-  over-flow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .name {
   color: red;
 }
 
-@media screen and (max-width: 800px) {
-  main {
-    flex-direction: column;
-    text-align: center;
-  }
+.container {
+  max-width: 1100px;
+  margin: 75px auto;
+  padding: 0 20px;
+  text-align: left;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.lead {
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 10px 0 20px 0;
+}
+
+.navlink.active {
+  color: silver;
+}
+
+h1, h2 { margin: 12px 0; }
+.container h1 { font-size: 36px; }
+h2 { font-size: 24px; }
+
+.list-style {
+  margin: 8px 0 16px 20px;
+  line-height: 1.6;
+}
+
+.course-projects {
+  margin-top: 30px;
+}
+
+.course-projects h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.project-list {
+  list-style: none;
+  margin: 12px 0 0 0;
+  padding: 0;
+}
+
+.project-item {
+  padding: 12px 0 16px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.project-item:last-child {
+  border-bottom: none;
+}
+
+.project-link {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+
+.project-link:hover {
+  color: gray;
+  transition: 0.3s;
+}
+
+.project-desc {
+  margin-top: 6px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.mailto-button {
+  display: inline-block;
+  padding: 12px 18px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.mailto-button:hover {
+  color: silver;
+  transition: 0.3s;
 }
