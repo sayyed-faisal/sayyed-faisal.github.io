@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: black;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin: 75px auto;
+  padding: 0 20px;
+  text-align: left;
+  font-family: roboto, sans-serif;
+  font-size: 36px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: silver;
+  font-family: roboto, sans-serif;
+  padding: 25px 25px 25px 25px;
+  margin-top: auto;
+}
+
+.navitem {
+  display: inline-block;
+  padding: 1em;
+}
+
+.navlink {
+  color: white;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.navlink:hover {
+  color: silver;
+  transition: 0.3s;
+}
+
+.socials {
+  font-size: 18px;
+}
+
+.social-link {
+  color: black;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: gray;
+  transition: 0.3s;
+}
+
+.hero-img{
+  width: 100%;
+  min-width: 8em;
+  max-width: 30rem;
+  height: auto;
+}
+
+.hero-text {
+  font-size: clamp(16px, 4vw, 36px);
+  word-wrap: break-word;
+  over-flow-wrap: break-word;
+}
+
+.name {
+  color: red;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    flex-direction: column;
+    text-align: center;
+  }
+}
